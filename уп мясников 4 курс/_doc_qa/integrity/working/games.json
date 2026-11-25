@@ -1,0 +1,20 @@
+[
+  {"id":"game-1","title":"Каркассон","genre":"стратегия","playersMin":2,"playersMax":5,"age":7,"price":350,"emoji":"🏰","description":"Классическая игра о выкладывании тайлов, городах и дорогах."},
+  {"id":"game-2","title":"Колонизаторы","genre":"стратегия","playersMin":3,"playersMax":4,"age":10,"price":500,"emoji":"🏝️","description":"Осваивайте остров, собирайте ресурсы и развивайте поселения."},
+  {"id":"game-3","title":"Ticket to Ride","genre":"стратегия","playersMin":2,"playersMax":5,"age":8,"price":550,"emoji":"🚂","description":"Прокладывайте железные дороги и соединяйте города."},
+  {"id":"game-4","title":"Шахматы","genre":"классика","playersMin":2,"playersMax":2,"age":6,"price":200,"emoji":"♟️","description":"Классическая дуэль, где каждый ход меняет ход партии."},
+  {"id":"game-5","title":"Монополия","genre":"семейная","playersMin":2,"playersMax":6,"age":8,"price":450,"emoji":"🎩","description":"Покупайте улицы, стройте отели и управляйте империей."},
+  {"id":"game-6","title":"Азул","genre":"семейная","playersMin":2,"playersMax":4,"age":8,"price":420,"emoji":"🔷","description":"Составляйте красочные узоры из плиток и планируйте каждый ход."},
+  {"id":"game-7","title":"Диксит","genre":"кооперативная","playersMin":3,"playersMax":8,"age":8,"price":400,"emoji":"🎨","description":"Рассказывайте загадочные истории с помощью иллюстраций."},
+  {"id":"game-8","title":"Манчкин","genre":"карточная","playersMin":3,"playersMax":6,"age":10,"price":300,"emoji":"🗡️","description":"Побеждайте монстров и собирайте сокровища."},
+  {"id":"game-9","title":"Uno","genre":"карточная","playersMin":2,"playersMax":10,"age":6,"price":150,"emoji":"🎴","description":"Быстрая карточная игра для большой компании."},
+  {"id":"game-10","title":"Бэнг!","genre":"карточная","playersMin":4,"playersMax":7,"age":10,"price":280,"emoji":"🤠","description":"Карточный вестерн с тайными ролями."},
+  {"id":"game-11","title":"Эволюция","genre":"карточная","playersMin":2,"playersMax":4,"age":12,"price":320,"emoji":"🦎","description":"Создавайте виды и помогайте им выживать."},
+  {"id":"game-12","title":"Codenames","genre":"кооперативная","playersMin":2,"playersMax":8,"age":12,"price":380,"emoji":"🕵️","description":"Ищите секретных агентов по словесным подсказкам."},
+  {"id":"game-13","title":"Бункер","genre":"социальная","playersMin":4,"playersMax":16,"age":18,"price":600,"emoji":"☢️","description":"Докажите, что именно вы нужны для выживания."},
+  {"id":"game-14","title":"Мафия","genre":"социальная","playersMin":6,"playersMax":20,"age":16,"price":250,"emoji":"🕶️","description":"Раскройте тайны города в командной игре."},
+  {"id":"game-15","title":"Активити","genre":"пати-гейм","playersMin":4,"playersMax":16,"age":12,"price":350,"emoji":"🎭","description":"Объясняйте слова рисунком и пантомимой."},
+  {"id":"game-16","title":"Крокодил","genre":"пати-гейм","playersMin":4,"playersMax":12,"age":6,"price":200,"emoji":"🐊","description":"Показывайте слова жестами."},
+  {"id":"game-17","title":"Alias (Скажи иначе)","genre":"пати-гейм","playersMin":4,"playersMax":12,"age":12,"price":300,"emoji":"💬","description":"Объясняйте слова своей команде на время."},
+  {"id":"game-18","title":"Имаджинариум","genre":"ассоциативная","playersMin":4,"playersMax":7,"age":12,"price":450,"emoji":"🖼️","description":"Находите неожиданные ассоциации к иллюстрациям."}
+]

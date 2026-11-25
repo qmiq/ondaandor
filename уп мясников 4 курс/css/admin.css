@@ -1,0 +1,136 @@
+/* ===== ADMIN SUMMARY ===== */
+.admin-stats {
+  display: grid;
+  margin: 22px 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.stat-card {
+  padding: 15px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.stat-card strong {
+  display: block;
+  color: var(--color-accent-2);
+  font-size: clamp(1.25rem, 4vw, 1.8rem);
+}
+
+.stat-card span {
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+}
+
+/* ===== ADMIN TABS ===== */
+.admin-tabs {
+  display: flex;
+  overflow-x: auto;
+  margin: 24px 0 18px;
+  border-bottom: 1px solid var(--color-border);
+  gap: 8px;
+}
+
+.admin-tab {
+  padding: 12px 15px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.admin-tab.is-active {
+  border-bottom-color: var(--color-accent);
+  color: var(--color-accent-2);
+}
+
+.admin-panel {
+  display: none;
+}
+
+.admin-panel.is-active {
+  display: block;
+}
+
+/* ===== ADMIN FORMS AND TABLES ===== */
+.admin-game-form {
+  margin-bottom: 20px;
+}
+
+.admin-game-form h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(244, 237, 227, 0.08);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.admin-table th {
+  background: rgba(0, 0, 0, 0.16);
+  color: var(--color-accent-2);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.admin-table td {
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.table-actions,
+.admin-inline {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.admin-inline select {
+  max-width: 145px;
+  min-height: 36px;
+  padding: 6px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 7px;
+  background: #211e1a;
+  color: var(--color-text);
+  font-size: 0.78rem;
+}
+
+.admin-inline select:focus {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+.admin-table .muted {
+  font-size: 0.72rem;
+}
+
+.is-hidden {
+  display: none !important;
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1C1A17">
+    <title>ONDA ANDOR SLEEP MODE — Админ-панель</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎲%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script type="module" src="js/admin.js"></script>
+  </head>
+  <body>
+    <div data-header></div>
+    <main class="container section">
+      <span class="eyebrow">Управление клубом</span>
+      <h1>ONDA ANDOR SLEEP MODE — Панель администратора</h1>
+
+      <section class="admin-stats" aria-label="Статистика">
+        <article class="stat-card"><strong id="stat-games">0</strong><span>Игр</span></article>
+        <article class="stat-card"><strong id="stat-bookings">0</strong><span>Бронирований</span></article>
+        <article class="stat-card"><strong id="stat-users">0</strong><span>Пользователей</span></article>
+      </section>
+
+      <div
+        class="admin-tabs"
+        role="tablist"
+        aria-label="Разделы админ-панели"
+      >
+        <button
+          class="admin-tab is-active"
+          id="tab-games"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          data-tab="games"
+        >Игры</button>
+        <button
+          class="admin-tab"
+          id="tab-bookings"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-tab="bookings"
+        >Бронирования</button>
+        <button
+          class="admin-tab"
+          id="tab-users"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          data-tab="users"
+        >Пользователи</button>
+      </div>
+
+      <section
+        class="admin-panel is-active"
+        id="panel-games"
+        role="tabpanel"
+        aria-labelledby="tab-games"
+      >
+        <form
+          class="form-card form-grid admin-game-form"
+          id="game-form"
+          novalidate
+        >
+          <h2 class="form-wide" id="game-form-title">Добавить игру</h2>
+          <input type="hidden" name="id">
+          <div class="field"><label for="game-title">Название</label><input id="game-title" name="title" required></div>
+          <div class="field"><label for="game-genre">Жанр</label><input id="game-genre" name="genre" required></div>
+          <div class="field"><label for="players-min">Игроков от</label><input id="players-min" name="playersMin" type="number" min="1" max="20" required></div>
+          <div class="field"><label for="players-max">Игроков до</label><input id="players-max" name="playersMax" type="number" min="1" max="20" required></div>
+          <div class="field"><label for="game-age">Возраст</label><input id="game-age" name="age" type="number" min="0" required></div>
+          <div class="field"><label for="game-price">Цена (₽)</label><input id="game-price" name="price" type="number" min="0" required></div>
+          <div class="field"><label for="game-emoji">Эмодзи</label><input id="game-emoji" name="emoji" value="🎲" maxlength="8"></div>
+          <div class="field"><label for="game-gradient">Градиент CSS</label><input id="game-gradient" name="gradient" value="linear-gradient(135deg, #7B3F00, #D4A017)" required></div>
+          <div class="field form-wide"><label for="game-description">Описание</label><textarea id="game-description" name="description"></textarea></div>
+          <div class="form-wide">
+            <button class="button button-accent" type="submit">Сохранить игру</button>
+            <button
+              class="button button-ghost is-hidden"
+              id="game-cancel"
+              type="button"
+            >Отмена</button>
+          </div>
+        </form>
+        <div class="table-wrap">
+          <table class="admin-table">
+            <thead><tr><th>Игра</th><th>Жанр</th><th>Игроки</th><th>Возраст</th><th>Цена</th><th>Действия</th></tr></thead>
+            <tbody id="games-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section
+        class="admin-panel"
+        id="panel-bookings"
+        role="tabpanel"
+        aria-labelledby="tab-bookings"
+      >
+        <div class="table-wrap">
+          <table class="admin-table">
+            <thead><tr><th>Номер</th><th>Клиент</th><th>Дата и время</th><th>Гости</th><th>Игра</th><th>Статус</th><th>Действия</th></tr></thead>
+            <tbody id="bookings-table"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section
+        class="admin-panel"
+        id="panel-users"
+        role="tabpanel"
+        aria-labelledby="tab-users"
+      >
+        <div class="table-wrap">
+          <table class="admin-table">
+            <thead><tr><th>Имя</th><th>Email</th><th>Телефон</th><th>Роль</th><th>Действия</th></tr></thead>
+            <tbody id="users-table"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <div data-footer></div>
+  </body>
+</html>

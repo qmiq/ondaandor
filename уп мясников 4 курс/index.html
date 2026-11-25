@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1C1A17">
+    <meta name="description" content="ONDA ANDOR SLEEP MODE — клуб настольных игр. Играй. Думай. Побеждай.">
+    <title>ONDA ANDOR SLEEP MODE — Клуб настольных игр</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎲%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/slider.js"></script>
+  </head>
+  <body>
+    <div data-header></div>
+
+    <main>
+      <!-- ===== HERO / SLIDER ===== -->
+      <section class="hero" aria-label="О клубе">
+        <span class="hero-moon" aria-hidden="true">🌙</span>
+        <button
+          class="hero-control hero-prev"
+          type="button"
+          aria-label="Предыдущий слайд"
+        >‹</button>
+        <button
+          class="hero-control hero-next"
+          type="button"
+          aria-label="Следующий слайд"
+        >›</button>
+        <div class="hero-inner">
+          <div class="hero-slides" aria-live="polite">
+            <article class="hero-slide is-active">
+              <span class="slide-emblem" aria-hidden="true">🎲</span>
+              <span class="eyebrow">Клуб настольных игр</span>
+              <h1>ONDA ANDOR SLEEP MODE</h1>
+              <p>Играй. Думай. Побеждай. Твоя следующая история начинается за игровым столом.</p>
+              <div class="hero-actions">
+                <a class="button button-accent" href="catalog.html">Смотреть каталог →</a>
+                <a class="button button-ghost" href="booking.html">Забронировать стол</a>
+              </div>
+            </article>
+            <article class="hero-slide">
+              <span class="slide-emblem" aria-hidden="true">🏆</span>
+              <span class="eyebrow">Твой ход</span>
+              <h2>Играй. Думай. Побеждай.</h2>
+              <p>Стратегии, семейные вечера и новые знакомства — выбирай свою партию.</p>
+              <div class="hero-actions">
+                <a class="button button-accent" href="catalog.html">Найти игру →</a>
+                <a class="button button-ghost" href="booking.html">Забронировать стол</a>
+              </div>
+            </article>
+            <article class="hero-slide">
+              <span class="slide-emblem" aria-hidden="true">🎭</span>
+              <span class="eyebrow">Коллекция клуба</span>
+              <h2>18 игр — от классики до вечеринок</h2>
+              <p>Для дуэли, семейного вечера и компании, которой мало одного стола.</p>
+              <div class="hero-actions">
+                <a class="button button-accent" href="catalog.html">Смотреть все игры →</a>
+                <a class="button button-ghost" href="booking.html">Выбрать время</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="hero-dots" aria-label="Выбор слайда"></div>
+      </section>
+
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path fill="currentColor" d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"></path>
+        </svg>
+      </div>
+
+      <!-- ===== QUICK LINKS ===== -->
+      <section class="section quick-links" aria-labelledby="quick-title">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Первый ход</span>
+            <h2 id="quick-title">Куда пойти?</h2>
+            <p class="muted">Нужный раздел всегда под рукой.</p>
+          </div>
+          <div class="quick-grid" data-quicklinks></div>
+        </div>
+      </section>
+
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path fill="currentColor" d="M0,30 C280,80 420,0 720,35 C1000,70 1200,5 1440,38 L1440,80 L0,80 Z"></path>
+        </svg>
+      </div>
+
+      <!-- ===== POPULAR GAMES ===== -->
+      <section class="section" aria-labelledby="popular-title">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Выбор игроков</span>
+            <h2 id="popular-title">Популярные игры</h2>
+            <p class="muted">Шесть поводов собраться за одним столом.</p>
+          </div>
+          <div class="game-grid" id="popular-games"></div>
+          <p><a class="button button-ghost" href="catalog.html">Смотреть все игры →</a></p>
+        </div>
+      </section>
+
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+          <path fill="currentColor" d="M0,42 C180,5 440,82 700,38 C960,0 1200,80 1440,35 L1440,80 L0,80 Z"></path>
+        </svg>
+      </div>
+
+      <!-- ===== EVENTS ===== -->
+      <section class="section" aria-labelledby="events-title">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Встречаемся за столом</span>
+            <h2 id="events-title">Ближайшие события</h2>
+          </div>
+          <div class="event-grid">
+            <a class="event-card" href="booking.html">
+              <span class="event-date">ПЯТНИЦА · 19:00</span>
+              <h3>Вечер стратегий</h3>
+              <p>Колонизаторы, Каркассон и новые тактики.</p>
+              <span class="button button-small">Забронировать →</span>
+            </a>
+            <a class="event-card" href="booking.html">
+              <span class="event-date">СУББОТА · 16:00</span>
+              <h3>Семейная партия</h3>
+              <p>Азул, Диксит и игры для игроков любого возраста.</p>
+              <span class="button button-small">Забронировать →</span>
+            </a>
+            <a class="event-card" href="booking.html">
+              <span class="event-date">ВОСКРЕСЕНЬЕ · 18:00</span>
+              <h3>Большая компания</h3>
+              <p>Мафия, Бункер и Активити — места для всех.</p>
+              <span class="button button-small">Забронировать →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== JOIN THE CLUB ===== -->
+      <section class="section">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <span class="eyebrow">Стань частью клуба</span>
+              <h2>Твоя компания уже собирается</h2>
+              <p class="muted">Создай аккаунт или приходи на свою следующую партию.</p>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-accent" href="register.html">Зарегистрироваться</a>
+              <a class="button button-ghost" href="login.html">Войти</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-footer></div>
+  </body>
+</html>

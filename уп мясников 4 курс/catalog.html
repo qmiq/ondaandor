@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1C1A17">
+    <title>ONDA ANDOR SLEEP MODE — Каталог игр</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎲%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/catalog.js"></script>
+  </head>
+  <body>
+    <div data-header></div>
+    <main>
+      <section class="page-intro container">
+        <span class="eyebrow">Выбери свою партию</span>
+        <h1>Каталог игр</h1>
+        <p>18 игр для дуэлей, семейных вечеров и больших компаний.</p>
+      </section>
+
+      <section class="section" aria-label="Фильтры каталога">
+        <div class="container">
+          <form class="filter-bar" id="catalog-filters">
+            <div class="field">
+              <label for="search">Поиск по названию</label>
+              <input
+                id="search"
+                name="search"
+                type="search"
+                placeholder="Например, Каркассон"
+              >
+            </div>
+            <div class="field">
+              <label for="genre">Жанр</label>
+              <select id="genre" name="genre">
+                <option value="">Все жанры</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="players">Количество игроков</label>
+              <select id="players" name="players">
+                <option value="">Любое количество</option>
+                <option value="2">2 игрока</option>
+                <option value="3-4">3–4 игрока</option>
+                <option value="5-8">5–8 игроков</option>
+                <option value="9+">9 и более</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="price">Цена до: <span id="price-value">700 ₽</span></label>
+              <input
+                id="price"
+                name="price"
+                type="range"
+                min="100"
+                max="700"
+                step="10"
+                value="700"
+              >
+            </div>
+            <button class="button button-ghost form-wide" type="reset">Сбросить фильтры</button>
+          </form>
+
+          <div class="catalog-tools">
+            <span
+              class="muted"
+              id="results-count"
+              aria-live="polite"
+            >Найдено: 0 игр</span>
+            <a class="button button-small" href="booking.html">Забронировать стол →</a>
+          </div>
+          <div class="game-grid" id="catalog-games"></div>
+        </div>
+      </section>
+    </main>
+    <div data-footer></div>
+  </body>
+</html>

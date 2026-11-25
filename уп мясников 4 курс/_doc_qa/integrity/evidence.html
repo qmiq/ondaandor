@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Результат проверки целостности</title>
+    <style>
+      body { margin: 0; padding: 40px; background: #1c1a17; color: #f4ede3; font: 16px "Segoe UI", Arial, sans-serif; }
+      main { max-width: 1100px; margin: auto; padding: 30px; border-radius: 14px; background: #2b2621; }
+      h1 { color: #e8b84b; }
+      table { width: 100%; border-collapse: collapse; font-size: 13px; }
+      th, td { border: 1px solid #55483d; padding: 10px; text-align: left; }
+      th { color: #e8b84b; }
+      .ok { color: #90d58b; }
+      .changed { color: #ffb5aa; }
+      .summary { padding: 12px; border-radius: 8px; background: #3a332c; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Результат проверки целостности</h1>
+      <p class="summary">Эталон содержит 6 файлов. В тестовой копии изменён только index.html; остальные пять совпадают с SHA-256 манифестом.</p>
+      <table>
+        <thead><tr><th>Файл</th><th>Результат</th></tr></thead>
+        <tbody>
+          <tr><td>index.html</td><td class="changed">ИЗМЕНЁН</td></tr>
+          <tr><td>css/style.css</td><td class="ok">OK</td></tr>
+          <tr><td>js/booking.js</td><td class="ok">OK</td></tr>
+          <tr><td>js/db.js</td><td class="ok">OK</td></tr>
+          <tr><td>server.js</td><td class="ok">OK</td></tr>
+          <tr><td>games.json</td><td class="ok">OK</td></tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
